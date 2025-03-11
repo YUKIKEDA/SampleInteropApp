@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoApp.Wpf", "Simple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoApp.Core", "SimpleToDoApp.Core\SimpleToDoApp.Core.csproj", "{C3ED6CEA-714E-4AD5-94EC-58018BDF7335}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VbaInterop", "VbaInterop\VbaInterop.csproj", "{E7DCAD9B-187C-4A77-B1C9-991830A5939A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoApp.VbaInterop", "SimpleToDoApp.VbaInterop\SimpleToDoApp.VbaInterop.csproj", "{F4736547-9510-B454-9FA5-0EAB031E8A76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{C3ED6CEA-714E-4AD5-94EC-58018BDF7335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3ED6CEA-714E-4AD5-94EC-58018BDF7335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3ED6CEA-714E-4AD5-94EC-58018BDF7335}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7DCAD9B-187C-4A77-B1C9-991830A5939A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7DCAD9B-187C-4A77-B1C9-991830A5939A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7DCAD9B-187C-4A77-B1C9-991830A5939A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7DCAD9B-187C-4A77-B1C9-991830A5939A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4736547-9510-B454-9FA5-0EAB031E8A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4736547-9510-B454-9FA5-0EAB031E8A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4736547-9510-B454-9FA5-0EAB031E8A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4736547-9510-B454-9FA5-0EAB031E8A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
