@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <EnableComHosting>true</EnableComHosting>
-    <RegisterForCom>false</RegisterForCom>
-    <GenerateManifests>true</GenerateManifests>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RegisterForComInterop>false</RegisterForComInterop>
   </PropertyGroup>
 
   <ItemGroup>

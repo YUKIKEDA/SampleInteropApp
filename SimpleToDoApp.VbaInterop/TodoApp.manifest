@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity type="win32" name="TodoApp" version="1.0.0.0"/>
+  <clrClass
+    clsid="{E043AD74-F936-4817-B2F5-37F41CAFA3C3}"
+    progid="VbaInterop.TodoManager"
+    threadingModel="Both"
+    name="VbaInterop.TodoManager"
+    runtimeVersion="v4.0.30319">
+  </clrClass>
+</assembly> 
