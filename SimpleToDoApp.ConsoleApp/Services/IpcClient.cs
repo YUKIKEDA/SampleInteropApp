@@ -1,5 +1,6 @@
 using System.IO.Pipes;
 using System.Text;
+using SimpleToDoApp.Wpf.IpcServer.Models;
 
 namespace SimpleToDoApp.ConsoleApp.Services
 {
@@ -14,7 +15,7 @@ namespace SimpleToDoApp.ConsoleApp.Services
             _sendLock = new SemaphoreSlim(1, 1);
         }
 
-        public async Task SendMessageAsync(string message)
+        public async Task SendMessageAsync(IpcMessage message)
         {
             ThrowIfDisposed();
 
@@ -26,7 +27,7 @@ namespace SimpleToDoApp.ConsoleApp.Services
                 {
                     await pipeClient.ConnectAsync(5000); // 5秒のタイムアウト
                     using var writer = new StreamWriter(pipeClient);
-                    await writer.WriteLineAsync(message);
+                    await writer.WriteLineAsync(message.Serialize());
                     await writer.FlushAsync();
                 }
                 catch (Exception ex)
@@ -39,6 +40,24 @@ namespace SimpleToDoApp.ConsoleApp.Services
             {
                 _sendLock.Release();
             }
+        }
+
+        public async Task AddTodoAsync(string title)
+        {
+            var message = IpcMessage.Create("AddTodo", new Dictionary<string, string>
+            {
+                ["title"] = title
+            });
+            await SendMessageAsync(message);
+        }
+
+        public async Task DeleteTodoAsync(int id)
+        {
+            var message = IpcMessage.Create("DeleteTodo", new Dictionary<string, string>
+            {
+                ["id"] = id.ToString()
+            });
+            await SendMessageAsync(message);
         }
 
         protected virtual void Dispose(bool disposing)

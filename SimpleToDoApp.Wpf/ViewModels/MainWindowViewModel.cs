@@ -66,5 +66,11 @@ namespace SimpleToDoApp.Wpf.ViewModels
             var todos = await _todoService.GetAllTodosAsync();
             Todos = new ObservableCollection<TodoItem>(todos);
         }
+
+        public async Task RefreshTodosAsync()
+        {
+            var todos = await _todoService.GetAllTodosAsync();
+            Todos = new ObservableCollection<TodoItem>(todos);
+        }
     }
 } 

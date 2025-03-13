@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleToDoApp.Wpf.IpcServer\SimpleToDoApp.Wpf.IpcServer.csproj" />
+  </ItemGroup>
+
 </Project>
