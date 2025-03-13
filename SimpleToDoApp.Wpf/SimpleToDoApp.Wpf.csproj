@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SimpleToDoApp.Core\SimpleToDoApp.Core.csproj" />
+    <ProjectReference Include="..\SimpleToDoApp.Wpf.IpcServer\SimpleToDoApp.Wpf.IpcServer.csproj" />
   </ItemGroup>
 
 </Project>
