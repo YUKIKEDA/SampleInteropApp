@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoApp.Core", "Simpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoApp.ConsoleApp", "SimpleToDoApp.ConsoleApp\SimpleToDoApp.ConsoleApp.csproj", "{3422788F-9AD0-4359-AD7F-CEDE3A114F23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoApp.Wpf.IpcServer", "SimpleToDoApp.Wpf.IpcServer\SimpleToDoApp.Wpf.IpcServer.csproj", "{2FC103C3-87AD-453E-8499-1A94FF85C3F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3422788F-9AD0-4359-AD7F-CEDE3A114F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3422788F-9AD0-4359-AD7F-CEDE3A114F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3422788F-9AD0-4359-AD7F-CEDE3A114F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC103C3-87AD-453E-8499-1A94FF85C3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC103C3-87AD-453E-8499-1A94FF85C3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC103C3-87AD-453E-8499-1A94FF85C3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC103C3-87AD-453E-8499-1A94FF85C3F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
